@@ -1,87 +1,99 @@
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #444;
     background-color: #f4f4f4;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #009c3b;
+    color: white;
 }
 
-nav ul {
+.navbar {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+.navbar a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ff6347;
+.navbar a:hover {
+    color: #ff6384;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.btn {
+    background-color: #ff6384;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-main {
+.btn:hover {
+    background-color: #e05770;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
     padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
-
-.image-container {
+.flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.image-container img {
-    width: 100%;
-    max-width: 300px; 
-    margin: 10px 0;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
+
 .product {
-    background: #fff;
+    background: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
     text-align: center;
+    padding: 10px;
 }
 
 .product img {
     width: 100%;
-    max-width: 200px; 
+    height: auto;
 }
 
-button {
-    background-color: #ff6347;
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #009c3b;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #e5533d;
+.home-image, .product-image, .contact-image {
+    width: 300px;
+    height: auto; 
+    margin: 10px 0;
 }
